@@ -1,0 +1,16 @@
+program Cadastro_Empresa;
+
+uses
+  Vcl.Forms,
+  UEmpresa in 'UEmpresa.pas' {FrmCadEmpresa},
+  UPesquisa in 'UPesquisa.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFrmCadEmpresa, FrmCadEmpresa);
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

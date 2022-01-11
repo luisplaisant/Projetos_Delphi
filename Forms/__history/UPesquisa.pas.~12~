@@ -1,0 +1,72 @@
+unit UPesquisa;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Data.DB, Vcl.DBCtrls,
+  Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TFrmPesquisa = class(TForm)
+    Panel1: TPanel;
+    Panel2: TPanel;
+    DBGrid1: TDBGrid;
+    DBNavigator1: TDBNavigator;
+    EdPesquisa: TEdit;
+    Label1: TLabel;
+    BtPesquisa: TBitBtn;
+    CbOpcao: TComboBox;
+    Label2: TLabel;
+    procedure BtCadastroClick(Sender: TObject);
+    procedure BtPesquisaClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmPesquisa: TFrmPesquisa;
+
+implementation
+
+{$R *.dfm}
+
+uses UEmpresa;
+
+procedure TFrmPesquisa.BtCadastroClick(Sender: TObject);
+begin
+  FrmCadEmpresa.ShowModal;
+end;
+
+
+procedure TFrmPesquisa.BtPesquisaClick(Sender: TObject);
+begin
+  FrmCadEmpresa.Qcadastro.Close;
+  FrmCadEmpresa.QCadastro.Params.Clear;
+  FrmCadEmpresa.QCadastro.SQL.Add('');
+  FrmCadEmpresa.QCadastro.SQL.Clear;
+  FrmCadEmpresa.QCadastro.SQL.Add('select * from empresa');
+
+  case CbOpcao.Itemindex of
+    0: Begin
+      FrmCadEmpresa.QCadastro.SQL.Add('where Id_Empresa = :pcodigo');
+      FrmCadEmpresa.QCadastro.ParamByName('pcodigo').AsInteger := strtoint(EdPesquisa.Text);
+    End;
+
+    1: Begin
+      FrmCadEmpresa.QCadastro.SQL.Add('where Nome = :pnome');
+      FrmCadEmpresa.QCadastro.ParamByName('pnome').AsString := (EdPesquisa.Text);
+    End;
+  end;
+
+  FrmCadEmpresa.QCadastro.Open;
+
+  if FrmCadEmpresa.QCadastro.isEmpty then
+    Begin
+      messagedlg('Nenhum Registro Encontrado!', mtinformation, [mbOk], 0);
+    End;
+end;
+
+end.

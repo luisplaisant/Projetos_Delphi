@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/12/30 15:57:30.000.516,=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/05/24 13:02:22.000.830,=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/05/26 13:11:37.000.058,=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/09 17:13:53.000.954,=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/11 11:45:40.556,=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/11 11:47:24.105,C:\Users\Aluno\Downloads\Cadastro e Consulta Empresa Delphi\Forms\UEmpresa.pas=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/11 11:47:24.105,C:\Users\Aluno\Downloads\Cadastro e Consulta Empresa Delphi\Forms\UEmpresa.dfm=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/01/11 11:47:53.548,C:\Users\Aluno\Downloads\Cadastro e Consulta Empresa Delphi\Forms\Cadastro_Empresa.dproj=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/01/11 13:03:23.966,=C:\Users\Aluno\Downloads\Cadastro e Consulta Empresa Delphi\Forms\Unit1.pas</Transaction>
+    <Transaction>2022/01/11 13:04:31.138,C:\Users\Aluno\Downloads\Cadastro e Consulta Empresa Delphi\Forms\UPesquisa.dfm=C:\Users\Aluno\Downloads\Cadastro e Consulta Empresa Delphi\Forms\Unit1.dfm</Transaction>
+    <Transaction>2022/01/11 13:04:31.138,C:\Users\Aluno\Downloads\Cadastro e Consulta Empresa Delphi\Forms\UPesquisa.pas=C:\Users\Aluno\Downloads\Cadastro e Consulta Empresa Delphi\Forms\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,14 @@
+program Cadastro_Empresa;
+
+uses
+  Vcl.Forms,
+  UEmpresa in 'UEmpresa.pas' {FrmCadEmpresa};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFrmCadEmpresa, FrmCadEmpresa);
+  Application.Run;
+end.
